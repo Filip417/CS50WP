@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <title>Search</title>
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+            }
+            .centered{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80vh;
+                text-align: center;
+            }
+            img{
+                width: 50vb;
+            }
+
+            .wrapper {
+                display: flex;  
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .wrapper > * {
+                padding: 10px;
+                flex: 1 100%;
+            }
+            
+            .header {
+                text-align: right;
+            }
+
+            .left {
+                text-align: left;
+                float: left;
+                width: 30vb;
+                vertical-align: middle;
+            }
+
+            .right {
+                float: right;
+                min-height: 41px;
+                vertical-align: middle;
+                width: 50vb;
+            }
+
+            .lefter {
+                margin: 20px;
+                height: 40px;
+                font-weight: normal;
+            }
+
+            .form-control {
+                margin: 20px;
+            }
+
+            #ab {
+                text-align: left;
+                width: 80vb;
+                height: 50px;
+            }
+
+            #btn {
+                float: left;
+                margin: 20px;
+            }
+        
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <button onclick="location.href ='file:///C:/Users/sawin/CS50WP/index.html';"  class="btn btn-primary">Home</button>
+            </header>
+        <div class="centered">
+        <form action="https://google.com/search">
+            <p><img id="googleimg" src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-File.png"></p>
+            <div id="ab">Find pages with...</div>
+            <div>
+                <div class="left">
+                    <div class="lefter">all these words: </div>
+                    <div class="lefter">this exact word or phrase: </div>
+                    <div class="lefter">any of these words: </div>
+                    <div class="lefter">none of these words: </div>
+                </div>
+                <div class="right">
+                    <div><input class="form-control" type="text" name="q"></div>
+                    <div><input class="form-control" type="text" name="as_epq"></div>
+                    <div><input class="form-control" type="text" name="as_oq"></div>
+                    <div><input class="form-control" type="text" name="as_eq"></div>
+                </div>
+            </div>
+            <div id="btn"><input class="btn btn-light mb-1" name="btnK" type="submit" value="Advanced Search"></div>
+        </form>
+    </div>
+    </div>
+    </body>
+</html>
