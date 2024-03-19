@@ -1,0 +1,14 @@
+/* dark.css */
+:root {
+    --bg-color: #232323;
+    --bg2-color: #3c3c3c;
+    --border-color: #6a6a6a;
+    --text-color: #eeeeee;
+    --text2-color:#d1d1d1;
+    --hover-color: #4d4d4d;
+    --hover2-color: #585858;
+    --rightbtn-color: #eeeeee;
+    --tabledivshadow-color: #232323;
+    --incorrect-color: rgb(255, 180, 180);
+    --correct-color: rgb(0, 231, 0);
+}

@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-19 21:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+#: .\game\templates\game\index.html:10
+msgid "Chances left: "
+msgstr "Pozostałe szanse: "
+
+#: .\game\templates\game\index.html:11
+msgid "You won!"
+msgstr "Wygrałeś!"
+
+#: .\game\templates\game\index.html:12
+msgid "You Lost! Too many guesses."
+msgstr "Przegrałeś! Za dużo zgadnięć."
+
+#: .\game\templates\game\index.html:13
+msgid "No chances left"
+msgstr "Nie ma już żadnych szans"
+
+#: .\game\templates\game\index.html:14
+msgid "Please select car from the list"
+msgstr "Proszę wybrać samochód z listy"
+
+#: .\game\templates\game\index.html:15
+msgid "User ID"
+msgstr "ID Gracza"
+
+#: .\game\templates\game\index.html:16
+msgid "Games Played"
+msgstr "Rozegrane gry"
+
+#: .\game\templates\game\index.html:17
+msgid "Win"
+msgstr "Wygrana"
+
+#: .\game\templates\game\index.html:18
+msgid "Guesses per game"
+msgstr "Zgadnięcia na grę"
+
+#: .\game\templates\game\index.html:19
+msgid "Wins with 1 guess"
+msgstr "Wygrane z 1 zgadnięciem"
+
+#: .\game\templates\game\index.html:20
+msgid "Favourite type"
+msgstr "Ulubiony typ"
+
+#: .\game\templates\game\index.html:21
+msgid "Torque (Nm)"
+msgstr "Moment obrotowy (Nm)"
+
+#: .\game\templates\game\index.html:23 .\game\templates\game\layout.html:37
+msgid "All"
+msgstr "Wszystkie"
+
+#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:42
+msgid "German"
+msgstr "Niemieckie"
+
+#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:47
+msgid "British"
+msgstr "Brytyjskie"
+
+#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:52
+msgid "500hp+"
+msgstr "500km+"
+
+#: .\game\templates\game\index.html:42
+msgid "Make"
+msgstr "Marka"
+
+#: .\game\templates\game\index.html:43
+msgid "Model"
+msgstr "Model"
+
+#: .\game\templates\game\index.html:44
+msgid "Country"
+msgstr "Kraj"
+
+#: .\game\templates\game\index.html:45
+msgid "Engine (L)"
+msgstr "Silnik (L)"
+
+#: .\game\templates\game\index.html:46
+msgid "HP"
+msgstr "KM"
+
+#: .\game\templates\game\index.html:47
+msgid "Torque (lb-ft)"
+msgstr "Moment obrotowy (lb-ft)"
+
+#: .\game\templates\game\index.html:48
+msgid "0-62 mph (s)"
+msgstr "0-62 mph (s)"
+
+#: .\game\templates\game\index.html:49
+msgid "Price (USD)"
+msgstr "Cena (USD)"
+
+#: .\game\templates\game\index.html:61
+msgid "Type here..."
+msgstr "Wpisz tutaj..."
+
+#: .\game\templates\game\index.html:62
+msgid "Guess"
+msgstr "Zgadnij"
+
+#: .\game\templates\game\index.html:63
+msgid "Play again"
+msgstr "Zagraj ponownie"
+
+#: .\game\templates\game\index.html:76
+msgid "How to play?"
+msgstr "Jak grać?"
+
+#: .\game\templates\game\index.html:82
+msgid "Guess the CAR in 5 tries."
+msgstr "Zgadnij jakie to auto w 5 próbach."
+
+#: .\game\templates\game\index.html:83
+msgid ""
+"You will be shown an image of a car. Goal is to guess the exact car "
+"producer and model. You will be shown parameters of the guesses and "
+"indicating arrows to help you out with the correct answer."
+msgstr ""
+"Zostanie wyświetlony obraz samochodu. Celem jest odgadnięcie dokładnego samochodu "
+"producent i model. Wyświetlą się parametry poprzednich zgadnięć i "
+"wskazujące strzałki, które pomogą ci w znalezieniu prawidłowej odpowiedzi."
+
+#: .\game\templates\game\index.html:84
+msgid "You can change mode by clicking on mode name."
+msgstr "Możesz zmienić tryb, klikając w nazwę trybu."
+
+#: .\game\templates\game\index.html:85
+msgid ""
+"Send any bugs, suggestions for improvement or new feature/mode request to "
+msgstr ""
+"Wyślij wszelkie błędy, sugestie ulepszeń lub prośby o nową funkcję/tryb do "
+
+#: .\game\templates\game\index.html:95
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: .\game\templates\game\index.html:110
+msgid "Change language"
+msgstr "Zmień język"
+
+#: .\game\templates\game\index.html:115
+msgid "Set dark theme"
+msgstr "Ustaw ciemny motyw"
+
+#: .\game\templates\game\index.html:118
+msgid "Set light theme"
+msgstr "Ustaw jasny motyw"
+
+#: .\game\templates\game\index.html:129
+msgid "Set metric units"
+msgstr "Ustaw jednostki metryczne"
+
+#: .\game\templates\game\index.html:132
+msgid "Set imperial units"
+msgstr "Ustaw jednostki imperialne"
+
+#: .\game\templates\game\index.html:135
+msgid "Send suggestions/bugs: "
+msgstr "Wyślij sugestie/błędy: "
+
+#: .\game\templates\game\index.html:146
+msgid "Ranking"
+msgstr "Ranking"
+
+#: .\game\templates\game\layout.html:6
+msgid "Car Game"
+msgstr "Gra samochodowa"
+
+#: .\game\templates\game\layout.html:58
+msgid "What car is it?"
+msgstr "Jaki to samochód?"

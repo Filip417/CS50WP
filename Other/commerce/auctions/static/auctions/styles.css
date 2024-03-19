@@ -1,0 +1,31 @@
+body {
+    padding: 30px;
+}
+
+.container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the items */
+    border-bottom: 1px solid #ccc; /* Optional: Add border for visualization */
+    padding: 20px;
+}
+
+.listing-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent container */
+}
+
+.left-div {
+    flex: 1; /* Take up remaining space */
+}
+
+.right-div {
+    flex: 2; /* Take up double the space of left-div */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+.listingdiv {
+    padding: 50px;
+}
+
+img {
+    max-width: 500px;
+}

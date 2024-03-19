@@ -1,0 +1,368 @@
+/* Overall */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin-bottom:100px;
+}
+
+div {
+    text-align: center;
+}
+
+.bold td{
+    font-weight: 800 !important;
+}
+
+.custom-select {
+    position: relative;
+}
+
+/* Top header */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.flex-item-left {
+    flex: 40%;
+    margin: auto;
+    position: relative;
+}
+
+.flex-item-center {
+    flex: 20%;
+    margin: auto;
+}
+  
+.flex-item-right {
+    flex: 40%;
+    margin: auto;
+}
+
+.flex-item-right button {
+    background-color: transparent;
+    border:transparent;
+    height:64px;
+    width:64px;
+    margin-left:10px;
+}
+
+.flex-item-right button:hover {
+    background-color: var(--bg-color);
+}
+
+.nav-icon {
+    width: 2vw;
+    max-width:32px;
+}
+
+nav {
+    padding: 20px;
+    background-color: var(--bg2-color);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.nav-button {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    height: 2rem;
+    padding: 0 0.6rem;
+}
+
+.nav-button:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    width: max-content;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+}
+  
+.dropdown-content a {
+    background-color:var(--bg2-color);
+    border-style: none;
+    border-bottom: 0.5px var(--border-color) solid;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    height: 2rem;
+    padding: 0 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-color);
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+
+h4 {
+    font-family: "Inter UI";
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.modal-content,
+#search-input {
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    border-radius: 0px;
+}
+
+.modal-content .close{
+   color: var(--text-color);
+}
+
+#language-btn{
+    height:45px;
+    margin-left:5px;
+}
+
+#language-form{
+    display: flex;
+    justify-content: center;
+    padding:10px
+}
+
+#language-selector {
+    color: var(--text-color);
+    padding-left:10px;
+    appearance: none;
+    background: url('uk.png') no-repeat;
+    background-position: right center;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+#language-selector option {
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+}
+
+.mode-changer{
+    color:var(--text-color);
+    vertical-align:middle;
+}
+
+.mode-changer:hover{
+    text-decoration:none;
+    color:var(--text-color);
+    font-weight:500;
+}
+
+/* Content items */
+.img-wrapper {
+    display: inline-block;
+    margin-top: 20px;
+    width:50%;
+    aspect-ratio: 16 / 9;
+    overflow:hidden;
+    transition: transform 1s ease-out;
+    border-width: 0px;   
+    border-style: solid;
+}
+
+#main-img {
+    width:100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 1s ease-out;
+    filter: blur(32px);
+}
+
+#table-div {
+    margin: 0 auto;
+    width:50%;
+    overflow: auto;
+    filter: drop-shadow(0px 0px 3px var(--tabledivshadow-color));
+}
+
+.guess-icon{
+    object-fit:contain;
+    height:48px;
+    width:48px;
+}
+
+.table th, .table td{
+    vertical-align: middle;
+    padding:10px;
+    color: var(--text2-color);
+    background-color: var(--bg2-color);
+    border-bottom: 1px var(--border-color) solid;
+    font-size:12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.table th {
+    border-top:none;
+}
+
+.table th, .table td {
+    position: relative;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        top: -20px;
+        opacity:0;
+    }
+    to {
+        top: 0px;
+        opacity:1;
+    }
+}
+
+.border-top{
+    border-top: 1px solid var(--border-color);
+    padding: 15px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Bottom fixed items */
+#search-input-2 {
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    width: 640px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.form-control {
+    border-radius:0;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color: var(--text2-color);
+}
+
+.btn {
+    border-radius: 0;
+}
+
+#search-results {
+    position: absolute;
+    width: 640px;
+    max-height: 280px;
+    overflow: auto;
+    bottom: 50px;
+}
+
+.search-icon{
+    object-fit:contain;
+    height:32px;
+    width:32px;
+    margin-right:10px;
+}
+
+.option {
+    background-color: var(--bg2-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding:10px;
+    text-align: left;
+}
+
+.option:hover{
+    background-color: var(--hover-color);
+}
+
+#submission {
+    border-color:darkblue;
+    background-color: darkblue;
+}
+
+#submission:hover {
+    background-color: rgb(0, 0, 77);
+}
+
+#submission:active {
+    background-color: black;
+}
+
+#chances {
+    position: fixed;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    color: var(--text2-color);
+    font-size:16px;
+}
+
+#error {
+    position: fixed;
+    left: 50%;
+    bottom: 70px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    width: 640px;
+    background-color: #ff9100;
+    color: var(--text-color);
+    visibility: hidden;
+}
+
+/* Media queries organization */
+@media all and (max-aspect-ratio: 3/2) {
+    .body{
+        padding:10px;
+    }
+
+    #table-div,
+    .img-wrapper {
+        width:100%;
+    }
+ }
+
+ @media only screen and (max-width: 660px) {
+    .dropdown-content a,
+    .nav-button {
+        font-size:xx-small
+    }
+
+    .flex-item-right button {
+        height:32px;
+        width:32px;
+        margin-left:0px;
+    }
+
+    #table-div table th,
+    #table-div table td {
+        font-size: xx-small;
+    }
+
+    #search-input-2,
+    #error {
+        width: 90%;
+    }
+
+    #search-results {
+        width: 100%;
+    }
+
+}

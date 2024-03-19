@@ -1,0 +1,14 @@
+/* light.css */
+:root {
+    --bg-color: #ffffff;
+    --bg2-color: #f7f7f7;
+    --rightbtn-color: #f7f7f7;;
+    --border-color: #eeeeee;
+    --text-color: #1c1c1c;
+    --text2-color:#323232;
+    --hover-color: #e4e4e4;
+    --hover2-color: #f4f4f4;
+    --tabledivshadow-color: #bbbbbb80;
+    --incorrect-color: red;
+    --correct-color: green;
+}

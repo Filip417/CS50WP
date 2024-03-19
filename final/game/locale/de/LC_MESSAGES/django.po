@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-19 21:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\game\templates\game\index.html:10
+msgid "Chances left: "
+msgstr "Verbleibende Chancen: "
+
+#: .\game\templates\game\index.html:11
+msgid "You won!"
+msgstr "Du hast gewonnen!"
+
+#: .\game\templates\game\index.html:12
+msgid "You Lost! Too many guesses."
+msgstr "Du hast verloren! Zu viele Vermutungen."
+
+#: .\game\templates\game\index.html:13
+msgid "No chances left"
+msgstr "Du hast verloren! Zu viele Vermutungen."
+
+#: .\game\templates\game\index.html:14
+msgid "Please select car from the list"
+msgstr "Bitte wählen Sie ein Auto aus der Liste aus"
+
+#: .\game\templates\game\index.html:15
+msgid "User ID"
+msgstr "Benutzer-ID"
+
+#: .\game\templates\game\index.html:16
+msgid "Games Played"
+msgstr "Spiele gespielt"
+
+#: .\game\templates\game\index.html:17
+msgid "Win"
+msgstr "Gewinnen"
+
+#: .\game\templates\game\index.html:18
+msgid "Guesses per game"
+msgstr "Schätzungen pro Spiel"
+
+#: .\game\templates\game\index.html:19
+msgid "Wins with 1 guess"
+msgstr "Gewinnt mit 1 Tipp"
+
+#: .\game\templates\game\index.html:20
+msgid "Favourite type"
+msgstr "Lieblingstyp"
+
+#: .\game\templates\game\index.html:21
+msgid "Torque (Nm)"
+msgstr "Drehmoment (Nm)"
+
+#: .\game\templates\game\index.html:23 .\game\templates\game\layout.html:37
+msgid "All"
+msgstr "Alle"
+
+#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:42
+msgid "German"
+msgstr "Deutsch"
+
+#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:47
+msgid "British"
+msgstr "Britisch"
+
+#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:52
+msgid "500hp+"
+msgstr "500ps+"
+
+#: .\game\templates\game\index.html:42
+msgid "Make"
+msgstr "Autohersteller"
+
+#: .\game\templates\game\index.html:43
+msgid "Model"
+msgstr "Model"
+
+#: .\game\templates\game\index.html:44
+msgid "Country"
+msgstr "Land"
+
+#: .\game\templates\game\index.html:45
+msgid "Engine (L)"
+msgstr "Motor (L)"
+
+#: .\game\templates\game\index.html:46
+msgid "HP"
+msgstr "PS"
+
+#: .\game\templates\game\index.html:47
+msgid "Torque (lb-ft)"
+msgstr "Drehmoment (lb-ft)"
+
+#: .\game\templates\game\index.html:48
+msgid "0-62 mph (s)"
+msgstr "0-62 mph (s)"
+
+#: .\game\templates\game\index.html:49
+msgid "Price (USD)"
+msgstr "Preis (USD)"
+
+#: .\game\templates\game\index.html:61
+msgid "Type here..."
+msgstr "Geben Sie hier ein..."
+
+#: .\game\templates\game\index.html:62
+msgid "Guess"
+msgstr "Erraten"
+
+#: .\game\templates\game\index.html:63
+msgid "Play again"
+msgstr "Nochmal abspielen"
+
+#: .\game\templates\game\index.html:76
+msgid "How to play?"
+msgstr "Spielanleitung?"
+
+#: .\game\templates\game\index.html:82
+msgid "Guess the CAR in 5 tries."
+msgstr "Errate das CAR in 5 Versuchen."
+
+#: .\game\templates\game\index.html:83
+msgid ""
+"You will be shown an image of a car. Goal is to guess the exact car "
+"producer and model. You will be shown parameters of the guesses and "
+"indicating arrows to help you out with the correct answer."
+msgstr ""
+"Ihnen wird ein Bild eines Autos gezeigt. Ziel ist es, das genaue Auto zu "
+"erraten.Hersteller, Modell und Jahr. Ihnen werden Parameter der Vermutungen "
+"angezeigt und Hinweispfeile, die Ihnen bei der richtigen Antwort helfen."
+
+#: .\game\templates\game\index.html:84
+msgid "You can change mode by clicking on mode name."
+msgstr "Sie können den Modus ändern, indem Sie auf den Modusnamen klicken."
+
+#: .\game\templates\game\index.html:85
+
+msgid ""
+"Send any bugs, suggestions for improvement or new feature/mode request to "
+msgstr ""
+"Senden Sie alle Fehler, Verbesserungsvorschläge oder Anfragen zu neuen funktionen/modi an "
+
+#: .\game\templates\game\index.html:95
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: .\game\templates\game\index.html:110
+msgid "Change language"
+msgstr "Sprache ändern"
+
+#: .\game\templates\game\index.html:115
+msgid "Set dark theme"
+msgstr "Stellen Sie ein dunkles Thema ein"
+
+#: .\game\templates\game\index.html:118
+msgid "Set light theme"
+msgstr "Lichtthema festlegen"
+
+#: .\game\templates\game\index.html:129
+msgid "Set metric units"
+msgstr "Legen Sie metrische Einheiten fest"
+
+#: .\game\templates\game\index.html:132
+msgid "Set imperial units"
+msgstr "Legen Sie imperiale Einheiten fest"
+
+#: .\game\templates\game\index.html:135
+msgid "Send suggestions/bugs: "
+msgstr "Vorschläge/Fehler senden:"
+
+#: .\game\templates\game\index.html:146
+msgid "Ranking"
+msgstr "Rangfolge"
+
+#: .\game\templates\game\layout.html:6
+msgid "Car Game"
+msgstr "Autospiel"
+
+#: .\game\templates\game\layout.html:58
+msgid "What car is it?"
+msgstr "Welches Auto ist es?"

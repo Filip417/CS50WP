@@ -1,0 +1,160 @@
+{% extends "game/layout.html" %}
+
+{% block body %}
+{% load static %}
+{% load i18n %}
+
+<!-- Translations keys for dynamically changing values in js.js-->
+  <script>
+    var translations = {
+      'chances_left': "{% trans 'Chances left: ' %}",
+      'you_won': "{% trans 'You won!' %}",
+      'you_lost': "{% trans 'You Lost! Too many guesses.'  %}",
+      'no_chances_left': "{% trans 'No chances left'  %}",
+      'not_in_list_error': "{% trans 'Please select car from the list'  %}",
+      'user_id': "{% trans 'User ID'  %}",
+      'games_played': "{% trans 'Games Played'  %}",
+      'win': "{% trans 'Win'  %}",
+      'guesses_per_game': "{% trans 'Guesses per game'  %}",
+      'wins_1_guess': "{% trans 'Wins with 1 guess'  %}",
+      'favourite_type': "{% trans 'Favourite type'  %}",
+      'torque_nm': "{% trans 'Torque (Nm)'  %}",
+      'type': "{% trans type  %}",
+      'all':"{% trans 'All' %}",
+      'german':"{% trans 'German' %}",
+      'british':"{% trans 'British' %}",
+      '500hp+':"{% trans '500hp+' %}",
+    };
+  </script>
+
+
+<!-- Content items -->
+  <div class="img-wrapper" id="img-wrapper">
+        <img id="main-img"></img>
+  </div>
+
+
+
+    <div id="table-div">
+    <table id="guesses-table" style="visibility:hidden"  class="table table-striped table-hover">
+        <thead>
+        <tr>
+          <th>{% trans "Make" %}</th>
+          <th>{% trans "Model" %}</th>
+          <th>{% trans "Country" %}</th>
+          <th>{% trans "Engine (L)" %}</th>
+          <th>{% trans "HP" %}</th>
+          <th id="torque-header">{% trans "Torque (lb-ft)" %}</th>
+          <th id="zerosixty-header">{% trans "0-62 mph (s)" %}</th>
+          <th>{% trans "Price (USD)" %}</th>
+        </tr>
+    </thead>
+      </table>
+    </div>
+
+
+<!-- Bottom fixed items-->
+<form method="post">
+    {% csrf_token %} 
+    <div class="input-group mb-3" id="search-input-2"> 
+        <div id="search-results"></div>
+        <input type="text" class="form-control" id="search-input" placeholder="{% trans "Type here..." %}" autocomplete="off" autofocus>
+        <button type="submit" id="submission" style="display:block" class="btn btn-primary">{% trans "Guess" %}</button>
+        <button id="reset-btn" style="display:none" class="btn btn-success">{% trans "Play again" %}</button>   
+</div>
+</form>
+
+<div id="chances"></div>
+<div id="error"></div>
+
+
+  <!-- Modal How to play?-->
+  <div class="modal fade" id="howtoplayModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="exampleModalLabel">{% trans "How to play?" %}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>{% trans "Guess the CAR in 5 tries." %}</p>
+            <p>{% trans "You will be shown an image of a car. Goal is to guess the exact car producer and model. You will be shown parameters of the guesses and indicating arrows to help you out with the correct answer." %}</p>  
+            <p>{% trans "You can change mode by clicking on mode name." %}<p>
+            <p>{% trans "Send any bugs, suggestions for improvement or new feature/mode request to " %} xyz@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal Settings-->
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom">
+              <h5 class="modal-title" id="exampleModalLabel">{% trans "Settings" %}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="language-form" method="post" action="{% url 'set_language' %}">
+                {% csrf_token %}
+                <select name="language" id="language-selector">
+                    {% for lang_code, lang_name in LANGUAGES %}
+                    <option value="{{ lang_code }}" data-image="{{ lang_name }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
+                      {{ lang_name }}
+                  </option>                 
+                  {% endfor %}
+                </select>
+                <button type="submit" id="languagebtn"class="btn btn-primary">{% trans "Change language" %}</button>
+            </form>
+              <div class="border-top">
+              {% if mode == 'light' %}
+              <img class="guessicon" src="static/game/other/moon.png"></img>
+              <a class="mode-changer" href="{% url 'switch_mode' 'dark' %}">{% trans "Set dark theme" %}</a>
+              {% else %}
+              <img class="guessicon" src="static/game/other/sun.png"></img>
+              <a class="mode-changer" href="{% url 'switch_mode' 'light' %}">{% trans "Set light theme" %}</a>
+              {% endif %}
+            </div>
+              {% if mode == 'light' %}
+              <link rel="stylesheet" href="{% static 'game/light.css' %}">
+              {% else %}
+              <link rel="stylesheet" href="{% static 'game/dark.css' %}">
+              {% endif %}
+              <div class="border-top">
+                {% if units == 'imperial' %}
+                <img class="guessicon" src="static/game/other/metric.png"></img>
+                <a class="mode-changer" href="{% url 'switch_units' 'metric' %}">{% trans "Set metric units" %}</a>
+                {% else %}
+                <img class="guessicon" src="static/game/other/imperial.png"></img>
+                <a class="mode-changer" href="{% url 'switch_units' 'imperial' %}">{% trans "Set imperial units" %}</a>
+                {% endif %}
+              </div>
+              <p class="border-top">{% trans "Send suggestions/bugs: " %} xyz@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Modal Ranking-->
+  <div class="modal fade" id="statsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="exampleModalLabel">{% trans "Ranking" %}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  <table id="top" class="table">
+                  </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
