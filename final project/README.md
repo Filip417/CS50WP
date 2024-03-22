@@ -2,6 +2,32 @@
 
 This is a simple web-based guessing game where players have to identify the make and model of a car within five attempts. The game is built using Django for the backend, and HTML, CSS, and JavaScript for the frontend.
 
+## Distinctiveness and Complexity
+
+The project satisfies distinctiveness and complexity requirements by offering a unique and engaging gameplay experience through a variety of game modes. It was inspired by games like loldle and geoguesser, with stats stored in cookies without the need to create an account to play and observe statistics. The integration of backend technologies like Django with frontend technologies like HTML, CSS, and JavaScript adds complexity to the project, making it a comprehensive web application.
+
+
+## File description
+js.js: JavaScript file containing client-side logic for the game.
+storage.js: JavaScript file handling data storage and retrieval.
+index.html: HTML file for the game's main page.
+layout.html: HTML file defining the layout structure for the game.
+views.py: Django views file containing server-side logic.
+models.py: Django models file defining database structure.
+admin.py: Django admin file for registering models.
+urls.py: Django URLs file defining URL routing.
+styles.css: CSS file containing styles for the game.
+light.css: CSS file containing styles for light mode.
+dark.css: CSS file containing styles for dark mode.
+
+## How to run your application
+
+To run this app in Django using Python's `manage.py`:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run the following command: python manage.py runserver
+
 ## How to Play
 
 1. **Start the Game**: Visit the game website to start playing.
