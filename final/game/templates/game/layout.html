@@ -37,21 +37,54 @@
                 {% trans "All" %}
             </a>
             {% endif %} 
+            
             {% if type != 'German'%}
             <a class="type-changer" href="{% url 'switch_type' 'German' %}">
                 {% trans "German" %}
             </a>
             {% endif %} 
+
             {% if type != 'British'%}
             <a class="type-changer" href="{% url 'switch_type' 'British' %}">
               {% trans "British" %}
             </a>
             {% endif %}
+
             {% if type != '500hp+'%}
             <a class="type-changer" href="{% url 'switch_type' '500hp+' %}">
               {% trans "500hp+" %}
             </a>
-            {% endif %}                    
+            {% endif %}   
+
+            {% if type != '500hp-'%}
+            <a class="type-changer" href="{% url 'switch_type' '500hp-' %}">
+              {% trans "500hp-" %}
+            </a>
+            {% endif %}   
+
+            {% if type != '$100k+'%}
+            <a class="type-changer" href="{% url 'switch_type' '$100k+' %}">
+              {% trans "$100k+" %}
+            </a>
+            {% endif %}   
+
+            {% if type != '$100k-'%}
+            <a class="type-changer" href="{% url 'switch_type' '$100k-' %}">
+              {% trans "$100k-" %}
+            </a>
+            {% endif %}   
+
+            {% if type != '3s-'%}
+            <a class="type-changer" href="{% url 'switch_type' '3s-' %}">
+              {% trans "3s-" %}
+            </a>
+            {% endif %}   
+
+            {% if type != '5l+'%}
+            <a class="type-changer" href="{% url 'switch_type' '5l+' %}">
+              {% trans "5l+" %}
+            </a>
+            {% endif %}   
             </div>
           </div>
           <div class="flex-item-center">

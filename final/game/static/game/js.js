@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Declaring constant values for game
         // maxResults is how many maximally suggested options to show
-    const maxResults = 20;
+    const maxResults = 88;
         // maxGuesses is how many chances player has ; game has been designed to use 5 as default
     const maxGuesses = 5;
 
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <th>${translations['win']}</th>
                 <th>${translations['guesses_per_game']}</th>
                 <th>${translations['wins_1_guess']}</th>
-                <th>${translations['favourite_type']}</th>
+                <th>${translations['favourite']}</th>
                 </tr>`;
                 var count = 0;
                 top.forEach(user => {

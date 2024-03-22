@@ -7,12 +7,18 @@ from django.utils.translation import gettext as _
 from django.conf import settings
 from .models import Car, Game
 import json
+import csv
 
 CAR_QUERIES = {
     'All': Car.objects.all(),
     'German': Car.objects.filter(country='Germany'),
     'British': Car.objects.filter(country='UK'),
-    '500hp+': Car.objects.filter(horse_power__gt=500)
+    '500hp+': Car.objects.filter(horse_power__gte=500),
+    '500hp-': Car.objects.filter(horse_power__lte=500),
+    '$100k+': Car.objects.filter(price__gte=100000),
+    '$100k-': Car.objects.filter(price__lte=100000),
+    '3s-': Car.objects.filter(zero_sixty__lte=3),
+    '5l+': Car.objects.filter(engine_size__gte=5),
 }
 
 def get_cars_by_type(car_type: str, **filters) -> QuerySet:
@@ -24,6 +30,7 @@ def get_cars_by_type(car_type: str, **filters) -> QuerySet:
     return queryset
 
 def index(request):
+    # if data needs updating: upload_data_from_csv('game/static/game/carsdata.csv')
     language = get_language(request)
     activate(language)
     mode = request.session.get('mode', settings.DEFAULT_MODE)
@@ -151,6 +158,43 @@ def switch_units(request, units):
     return redirect('index')
 
 def switch_type(request, type):
-    if type in ['All', 'German', 'British', '500hp+']:
+    if type in ['All', 'German', 'British', '500hp+', '500hp-','$100k+','$100k-', '3s-','5l+']:
         request.session['type'] = type
     return redirect('index')
+
+def upload_data_from_csv(csv_file):
+    with open(csv_file, 'r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            car_id = int(row['id'])
+            car_name = row.get('name', None)
+            car_make = row['car_make']
+            car_model = row['car_model']
+            engine_size = float(row['engine_size'])
+            horse_power = int(row['horse_power'])
+            torque = int(row['torque'])
+            zero_sixty = float(row['zero_sixty'])
+                      # Remove commas from price and convert to integer
+            price_str = row['price'].replace(',', '')
+            price = int(price_str)
+            country = row.get('country', None)
+
+            # Try to get an existing car instance, if it exists
+            try:
+                car = Car.objects.get(id=car_id)
+            except Car.DoesNotExist:
+                car = Car(id=car_id)
+
+            # Update the car fields
+            car.name = car_name
+            car.car_make = car_make
+            car.car_model = car_model
+            car.engine_size = engine_size
+            car.horse_power = horse_power
+            car.torque = torque
+            car.zero_sixty = zero_sixty
+            car.price = price
+            car.country = country
+
+            # Save the changes
+            car.save()

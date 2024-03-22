@@ -1,0 +1,89 @@
+id,name,car_make,car_model,engine_size,horse_power,torque,zero_sixty,price,country
+1,Porsche 911,Porsche,911,3,379,331,4,"101,200",Germany
+2,Lamborghini Huracan,Lamborghini,Huracan,5.2,630,443,2.8,"274,390",Italy
+3,Ferrari 488 GTB,Ferrari,488 GTB,3.9,661,561,3,"333,750",Italy
+4,Audi R8,Audi,R8,5.2,562,406,3.2,"142,700",Germany
+5,McLaren 720S,McLaren,720S,4,710,568,2.7,"298,000",UK
+6,BMW M8,BMW,M8,4.4,617,553,3.1,"130,000",Germany
+7,Mercedes-Benz AMG GT,Mercedes-Benz,AMG GT,4,523,494,3.8,"118,500",Germany
+8,Chevrolet Corvette,Chevrolet,Corvette,6.2,490,465,2.8,"59,900",USA
+9,Ford Mustang Shelby GT500,Ford,Mustang Shelby GT500,5.2,760,625,3.5,"81,000",USA
+10,Nissan GT-R Nismo,Nissan,GT-R Nismo,3.8,600,481,2.5,"212,000",Japan
+11,Aston Martin DB11,Aston Martin,DB11,5.2,630,516,3.5,"201,495",UK
+12,Bugatti Chiron,Bugatti,Chiron,8,1500,1180,2.4,"3,000,000",France
+13,Dodge Challenger SRT Hellcat,Dodge,Challenger SRT Hellcat,6.2,717,656,3.5,"61,000",USA
+14,Jaguar F-Type,Jaguar,F-Type,3,296,295,5.4,"70,100",UK
+15,Koenigsegg Jesko,Koenigsegg,Jesko,5,1280,1015,2.5,"2,800,000",Sweden
+16,Lexus LC 500,Lexus,LC 500,5,471,398,4.4,"92,950",Japan
+17,Porsche Boxster,Porsche,Boxster,2,300,280,4.7,"62,000",Germany
+18,McLaren Artura,McLaren,Artura,3,671,531,3,"225,000",UK
+19,Rimac Nevera,Rimac,Nevera,0,1914,1696,1.85,"2,400,000",Croatia
+20,Porsche 718 Cayman GT4,Porsche,718 Cayman GT4,4,414,309,3.8,"100,200",Germany
+21,Bentley Continental GT,Bentley,Continental GT,6,626,664,3.6,"225,000",UK
+22,Mercedes-Benz AMG SLS,Mercedes-Benz,AMG SLS,6.2,622,468,3.5,"248,000",Germany
+23,Polestar 1,Polestar,1,2,600,738,4.1,"155,000",Sweden
+24,Ferrari SF90 Stradale,Ferrari,SF90 Stradale,4,986,590,2.5,"625,000",Italy
+25,BMW i8,BMW,i8,1.5,369,420,4.2,"148,500",Germany
+26,Mercedes-Benz AMG CLS63,Mercedes-Benz,AMG CLS63,4,603,627,3.4,"132,000",Germany
+27,Audi S5,Audi,S5,3,349,369,4.4,"52,500",Germany
+28,Acura NSX,Acura,NSX,3.5,573,476,2.9,"159,495",Japan
+29,Mazda MX-5 Miata,Mazda,MX-5 Miata,2,181,151,6.5,"26,830",Japan
+30,Toyota Supra,Toyota,Supra,3,382,368,3.9,"43,090",Japan
+31,Lamborghini Aventador,Lamborghini,Aventador,6.5,770,531,2.9,"522,000",Italy
+32,BMW M4,BMW,M4,3,503,479,3.8,"75,000",Germany
+33,BMW M2,BMW,M2,3,405,406,4.2,"59,000",Germany
+34,Lamborghini Urus,Lamborghini,Urus,4,641,627,3.6,"222,004",Italy
+35,Audi RS3,Audi,RS3,2.5,401,369,3.6,"56,200",Germany
+36,Dodge Viper,Dodge,Viper,8.4,645,600,3.3,"120,000",USA
+37,Audi RS6,Audi,RS6,4,591,590,3.5,"109,000",Germany
+38,BMW M5,BMW,M5,4.4,600,553,3.2,"104,000",Germany
+39,Aston Martin DBS Superleggera,Aston Martin,DBS Superleggera,5.2,715,663,3.4,"330,000",UK
+40,McLaren 600LT,McLaren,600LT,3.8,592,457,2.9,"256,500",UK
+41,Porsche Taycan Turbo S,Porsche,Taycan Turbo S,0,750,774,2.6,"185,000",Germany
+42,Ferrari 812 Superfast,Ferrari,812 Superfast,6.5,789,530,2.9,"363,730",Italy
+43,Kia Stinger,Kia,Stinger,3.3,368,376,4.7,"52,200",South Korea
+44,McLaren 765LT,McLaren,765LT,4,755,590,2.8,"358,000",UK
+45,Lotus Evora,Lotus,Evora,3.5,416,317,3.8,"96,950",UK
+46,Alpine A110,Alpine,A110,1.8,288,236,4.4,"71,500",France
+47,Maserati GranTurismo,Maserati,GranTurismo,4.7,454,384,4.8,"150,980",Italy
+48,Mercedes-Benz AMG C63S,Mercedes-Benz,AMG C63S,4,503,516,3.7,"81,550",Germany
+49,Pagani Huayra,Pagani,Huayra,6,764,738,2.8,"3,500,000",Italy
+50,McLaren Speedtail,McLaren,Speedtail,4,1035,848,2.5,"2,300,000",UK
+51,Lamborghini Sián,Lamborghini,Sián,6.5,819,531,2.8,"3,600,000",Italy
+52,Ferrari F8 Spider,Ferrari,F8 Spider,3.9,710,568,2.9,"280,000",Italy
+53,Rolls-Royce Wraith,Rolls-Royce,Wraith,6.8,624,605,4.4,"335,550",UK
+54,Tesla Model S Plaid,Tesla,Model S Plaid,0,1020,1050,1.9,"141,990",USA
+55,TVR Griffith,TVR,Griffith,5,500,420,3.9,"157,500",UK
+56,Ultima RS,Ultima,RS,6.2,1200,1300,2.3,"220,000",UK
+57,Ford GT,Ford,GT,3.5,647,550,3,"500,000",USA
+58,Subaru WRX STI,Subaru,WRX STI,2.5,310,290,5.2,"38,170",Japan
+59,McLaren Senna,McLaren,Senna,4,789,590,2.7,"1,500,000",UK
+60,Ferrari Roma,Ferrari,Roma,3.9,612,561,3.3,"222,630",Italy
+61,Audi RS7,Audi,RS7,4,591,590,3.5,"117,000",Germany
+62,Rolls-Royce Dawn,Rolls-Royce,Dawn,6.6,563,605,4.3,"346,300",UK
+63,Nissan 400Z,Nissan,400Z,3,400,350,4,"40,000",Japan
+64,Ford Mustang GT,Ford,Mustang GT,5,460,420,4,"45,000",USA
+65,Porsche 918 Spyder,Porsche,918 Spyder,4.6,887,944,2.2,"1,800,000",Germany
+66,Mercedes-Benz AMG GT Black Series,Mercedes-Benz,AMG GT Black Series,4,720,590,3.1,"330,000",Germany
+67,Alfa Romeo 4C,Alfa Romeo,4C,1.8,237,258,4.2,"67,150",Italy
+68,Chevrolet Camaro,Chevrolet,Camaro,6.2,455,455,4,"62,195",USA
+69,Ferrari Portofino,Ferrari,Portofino,3.9,591,561,3.4,"250,000",Italy
+70,Audi TT RS,Audi,TT RS,2.5,394,354,3.6,"70,000",Germany
+71,Aston Martin Vantage,Aston Martin,Vantage,4,503,505,3.5,"152,995",UK
+72,BMW Z4 Roadster,BMW,Z4 Roadster,2,255,295,5.2,"50,000",Germany
+73,Mercedes-Benz AMG GT 63S,Mercedes-Benz,AMG GT 63S,4,630,664,3.1,"162,000",Germany
+74,Audi RS5,Audi,RS5,2.9,444,443,3.5,"76,700",Germany
+75,Tesla Roadster,Tesla,Roadster,0,288,295,3.7,"128,500",USA
+76,Alfa Romeo Giulia Quadrifoglio,Alfa Romeo,Giulia Quadrifoglio,2.9,505,443,3.8,"83,250",Italy
+77,Mercedes-Benz AMG C43,Mercedes-Benz,AMG C43,3,385,384,4.5,"59,900",Germany
+78,Mercedes-Benz AMG A45,Mercedes-Benz,AMG A45,2,382,354,4,"50,000",Germany
+79,Lotus Evija,Lotus,Evija,0,2000,1254,2.8,"2,800,000",UK
+80,Rolls-Royce Ghost,Rolls-Royce,Ghost,6.8,563,627,4.6,"332,500",UK
+81,Dodge Charger,Dodge,Charger,6.2,797,707,3.3,"72,000",USA
+82,Porsche Panamera,Porsche,Panamera,2.9,325,331,5.3,"88,800",Germany
+83,Nissan 370Z,Nissan,370Z,3.7,332,270,5.3,"33,000",Japan
+84,McLaren 570S,McLaren,570S,3.8,562,443,3.1,"208,800",UK
+85,McLaren GT,McLaren,GT,4,612,465,3.1,"250,000",UK
+86,Pininfarina Battista,Pininfarina,Battista,0,1872,1696,1.9,"2,500,000",Italy
+87,Maserati MC20,Maserati,MC20,3,621,538,2.9,"210,000",Italy
+88,Ford Mustang,Ford,Mustang,2.3,310,350,5.3,"27,205",USA
