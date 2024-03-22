@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 21:09+0000\n"
+"POT-Creation-Date: 2024-03-22 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,8 @@ msgid "Wins with 1 guess"
 msgstr "Gewinnt mit 1 Tipp"
 
 #: .\game\templates\game\index.html:20
-msgid "Favourite type"
-msgstr "Lieblingstyp"
+msgid "Favourite"
+msgstr "Favoritin"
 
 #: .\game\templates\game\index.html:21
 msgid "Torque (Nm)"
@@ -70,15 +70,15 @@ msgstr "Drehmoment (Nm)"
 msgid "All"
 msgstr "Alle"
 
-#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:42
+#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:43
 msgid "German"
 msgstr "Deutsch"
 
-#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:47
+#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:49
 msgid "British"
 msgstr "Britisch"
 
-#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:52
+#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:55
 msgid "500hp+"
 msgstr "500ps+"
 
@@ -136,9 +136,9 @@ msgstr "Errate das CAR in 5 Versuchen."
 
 #: .\game\templates\game\index.html:83
 msgid ""
-"You will be shown an image of a car. Goal is to guess the exact car "
-"producer and model. You will be shown parameters of the guesses and "
-"indicating arrows to help you out with the correct answer."
+"You will be shown an image of a car. Goal is to guess the exact car producer "
+"and model. You will be shown parameters of the guesses and indicating arrows "
+"to help you out with the correct answer."
 msgstr ""
 "Ihnen wird ein Bild eines Autos gezeigt. Ziel ist es, das genaue Auto zu "
 "erraten.Hersteller, Modell und Jahr. Ihnen werden Parameter der Vermutungen "
@@ -149,11 +149,11 @@ msgid "You can change mode by clicking on mode name."
 msgstr "Sie können den Modus ändern, indem Sie auf den Modusnamen klicken."
 
 #: .\game\templates\game\index.html:85
-
 msgid ""
 "Send any bugs, suggestions for improvement or new feature/mode request to "
 msgstr ""
-"Senden Sie alle Fehler, Verbesserungsvorschläge oder Anfragen zu neuen funktionen/modi an "
+"Senden Sie alle Fehler, Verbesserungsvorschläge oder Anfragen zu neuen "
+"funktionen/modi an "
 
 #: .\game\templates\game\index.html:95
 msgid "Settings"
@@ -191,6 +191,26 @@ msgstr "Rangfolge"
 msgid "Car Game"
 msgstr "Autospiel"
 
-#: .\game\templates\game\layout.html:58
+#: .\game\templates\game\layout.html:61
+msgid "500hp-"
+msgstr "500ps-"
+
+#: .\game\templates\game\layout.html:67
+msgid "$100k+"
+msgstr "$100k+"
+
+#: .\game\templates\game\layout.html:73
+msgid "$100k-"
+msgstr "$100k-"
+
+#: .\game\templates\game\layout.html:79
+msgid "3s-"
+msgstr "3s-"
+
+#: .\game\templates\game\layout.html:85
+msgid "5l+"
+msgstr "5l+"
+
+#: .\game\templates\game\layout.html:91
 msgid "What car is it?"
 msgstr "Welches Auto ist es?"

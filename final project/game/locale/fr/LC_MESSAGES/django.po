@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 21:09+0000\n"
+"POT-Creation-Date: 2024-03-22 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,8 @@ msgid "Wins with 1 guess"
 msgstr "Gagne avec 1 supposition"
 
 #: .\game\templates\game\index.html:20
-msgid "Favourite type"
-msgstr "Type préféré"
+msgid "Favourite"
+msgstr "Préféré"
 
 #: .\game\templates\game\index.html:21
 msgid "Torque (Nm)"
@@ -68,17 +68,17 @@ msgstr "Couple (Nm)"
 
 #: .\game\templates\game\index.html:23 .\game\templates\game\layout.html:37
 msgid "All"
-msgstr "toutes"
+msgstr "Toutes"
 
-#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:42
+#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:43
 msgid "German"
-msgstr "allemande"
+msgstr "Allemande"
 
-#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:47
+#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:49
 msgid "British"
-msgstr "britanique"
+msgstr "Britanique"
 
-#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:52
+#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:55
 msgid "500hp+"
 msgstr "500cv+"
 
@@ -136,9 +136,9 @@ msgstr "Devinez la CAR en 5 essais."
 
 #: .\game\templates\game\index.html:83
 msgid ""
-"You will be shown an image of a car. Goal is to guess the exact car "
-"producer and model. You will be shown parameters of the guesses and "
-"indicating arrows to help you out with the correct answer."
+"You will be shown an image of a car. Goal is to guess the exact car producer "
+"and model. You will be shown parameters of the guesses and indicating arrows "
+"to help you out with the correct answer."
 msgstr ""
 "On vous montrera une image d’une voiture. Le but est de deviner la voiture "
 "exacte producteur, modèle et année. Les paramètres des suppositions et "
@@ -152,7 +152,8 @@ msgstr "Vous pouvez changer de mode en cliquant sur le nom du mode."
 msgid ""
 "Send any bugs, suggestions for improvement or new feature/mode request to "
 msgstr ""
-"Envoyez tout bug, suggestion d'amélioration ou demande de nouvelle fonctionnalité/mode à "
+"Envoyez tout bug, suggestion d'amélioration ou demande de nouvelle "
+"fonctionnalité/mode à "
 
 #: .\game\templates\game\index.html:95
 msgid "Settings"
@@ -190,6 +191,28 @@ msgstr "Classement"
 msgid "Car Game"
 msgstr "Jeu de voiture"
 
-#: .\game\templates\game\layout.html:58
+#: .\game\templates\game\layout.html:61
+#, fuzzy
+#| msgid "500hp+"
+msgid "500hp-"
+msgstr "500cv+"
+
+#: .\game\templates\game\layout.html:67
+msgid "$100k+"
+msgstr ""
+
+#: .\game\templates\game\layout.html:73
+msgid "$100k-"
+msgstr ""
+
+#: .\game\templates\game\layout.html:79
+msgid "3s-"
+msgstr ""
+
+#: .\game\templates\game\layout.html:85
+msgid "5l+"
+msgstr ""
+
+#: .\game\templates\game\layout.html:91
 msgid "What car is it?"
 msgstr "De quelle voiture s'agit-il?"

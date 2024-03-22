@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 21:13+0000\n"
+"POT-Creation-Date: 2024-03-22 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,9 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
-"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
 #: .\game\templates\game\index.html:10
 msgid "Chances left: "
 msgstr "Pozostałe szanse: "
@@ -60,7 +61,9 @@ msgid "Wins with 1 guess"
 msgstr "Wygrane z 1 zgadnięciem"
 
 #: .\game\templates\game\index.html:20
-msgid "Favourite type"
+#, fuzzy
+#| msgid "Favourite type"
+msgid "Favourite"
 msgstr "Ulubiony typ"
 
 #: .\game\templates\game\index.html:21
@@ -71,15 +74,15 @@ msgstr "Moment obrotowy (Nm)"
 msgid "All"
 msgstr "Wszystkie"
 
-#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:42
+#: .\game\templates\game\index.html:24 .\game\templates\game\layout.html:43
 msgid "German"
 msgstr "Niemieckie"
 
-#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:47
+#: .\game\templates\game\index.html:25 .\game\templates\game\layout.html:49
 msgid "British"
 msgstr "Brytyjskie"
 
-#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:52
+#: .\game\templates\game\index.html:26 .\game\templates\game\layout.html:55
 msgid "500hp+"
 msgstr "500km+"
 
@@ -137,12 +140,12 @@ msgstr "Zgadnij jakie to auto w 5 próbach."
 
 #: .\game\templates\game\index.html:83
 msgid ""
-"You will be shown an image of a car. Goal is to guess the exact car "
-"producer and model. You will be shown parameters of the guesses and "
-"indicating arrows to help you out with the correct answer."
+"You will be shown an image of a car. Goal is to guess the exact car producer "
+"and model. You will be shown parameters of the guesses and indicating arrows "
+"to help you out with the correct answer."
 msgstr ""
-"Zostanie wyświetlony obraz samochodu. Celem jest odgadnięcie dokładnego samochodu "
-"producent i model. Wyświetlą się parametry poprzednich zgadnięć i "
+"Zostanie wyświetlony obraz samochodu. Celem jest odgadnięcie dokładnego "
+"samochodu producent i model. Wyświetlą się parametry poprzednich zgadnięć i "
 "wskazujące strzałki, które pomogą ci w znalezieniu prawidłowej odpowiedzi."
 
 #: .\game\templates\game\index.html:84
@@ -191,6 +194,26 @@ msgstr "Ranking"
 msgid "Car Game"
 msgstr "Gra samochodowa"
 
-#: .\game\templates\game\layout.html:58
+#: .\game\templates\game\layout.html:61
+msgid "500hp-"
+msgstr "500km-"
+
+#: .\game\templates\game\layout.html:67
+msgid "$100k+"
+msgstr "$100k+"
+
+#: .\game\templates\game\layout.html:73
+msgid "$100k-"
+msgstr "$100k-"
+
+#: .\game\templates\game\layout.html:79
+msgid "3s-"
+msgstr "3s-"
+
+#: .\game\templates\game\layout.html:85
+msgid "5l+"
+msgstr "5l+"
+
+#: .\game\templates\game\layout.html:91
 msgid "What car is it?"
 msgstr "Jaki to samochód?"
