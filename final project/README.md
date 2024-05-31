@@ -1,94 +1,97 @@
 # Car Guess Game
 
-This is a simple web-based guessing game where players have to identify the make and model of a car within five attempts. The game is built using Django for the backend, and HTML, CSS, and JavaScript for the frontend.
+This is a web-based guessing game where players identify the make and model of a car within five attempts. The game is built using Django for the backend, and HTML, CSS, and JavaScript for the frontend.
 
 ## Distinctiveness and Complexity
 
-The project satisfies distinctiveness and complexity requirements by offering a unique and engaging gameplay experience through a variety of game modes. It was inspired by games like loldle and geoguesser, with stats stored in cookies without the need to create an account to play and observe statistics. The integration of backend technologies like Django with frontend technologies like HTML, CSS, and JavaScript adds complexity to the project, making it a comprehensive web application.
+### **Uniqueness**
+The Car Guess Game offers a unique and engaging gameplay experience that combines elements from games like Loldle and Geoguessr. Unlike traditional quiz games, our game provides hints through directional arrows after incorrect guesses, adding a layer of strategy and learning.
 
+### **Integration of Technologies**
+The project integrates Django on the backend with HTML, CSS, and JavaScript on the frontend. This combination ensures a smooth interaction between the server-side logic and client-side interactivity. The use of Django models to manage game data and player statistics adds complexity and depth to the project.
 
-## File description
-js.js: JavaScript file containing client-side logic for the game.
-storage.js: JavaScript file handling data storage and retrieval.
-index.html: HTML file for the game's main page.
-layout.html: HTML file defining the layout structure for the game.
-views.py: Django views file containing server-side logic.
-models.py: Django models file defining database structure.
-admin.py: Django admin file for registering models.
-urls.py: Django URLs file defining URL routing.
-styles.css: CSS file containing styles for the game.
-light.css: CSS file containing styles for light mode.
-dark.css: CSS file containing styles for dark mode.
+### **User Experience**
+Mobile responsiveness is a key feature of our application. We used responsive design techniques and tested the application across various devices to ensure an optimal user experience on both desktop and mobile platforms.
 
-## How to run your application
+### **Data Storage**
+Player statistics are stored in cookies, allowing users to play and track their progress without needing to create an account. This choice simplifies the user experience while still providing meaningful feedback and engagement.
 
-To run this app in Django using Python's `manage.py`:
+## File Descriptions
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory in your terminal.
-3. Run the following command: python manage.py runserver
+- **`js.js`**: Handles client-side game logic, including form submissions and updating the DOM based on user input.
+- **`storage.js`**: Manages local storage for saving and retrieving player statistics and game settings.
+- **`index.html`**: The main game page where players view car images and input their guesses.
+- **`layout.html`**: Base HTML template that includes common structure and elements used across different pages.
+- **`views.py`**: Django views that process requests and return responses, implementing game logic and rendering templates.
+- **`models.py`**: Defines Django models for storing game data, such as car information and player statistics.
+- **`admin.py`**: Registers models with the Django admin site for easy data management.
+- **`urls.py`**: Maps URL patterns to views, defining the routes for the application.
+- **`styles.css`**: Main stylesheet providing layout, colors, and fonts for the game.
+- **`light.css`**: Additional styles for light mode.
+- **`dark.css`**: Additional styles for dark mode.
+
+## How to Run Your Application
+
+To run this application locally:
+
+1. **Clone the repository**: `git clone <repository-url>`
+2. **Navigate to the project directory**: `cd car-guess-game`
+3. **Install dependencies**: `pip install -r requirements.txt`
+4. **Run database migrations**: `python manage.py migrate`
+5. **Start the development server**: `python manage.py runserver`
+6. **Access the application**: Open a web browser and go to `http://127.0.0.1:8000/`
 
 ## How to Play
 
 1. **Start the Game**: Visit the game website to start playing.
-   
-2. **Guess the Car**: You will be presented with an image of a car. Your goal is to guess the exact make and model of the car.
-
+2. **Guess the Car**: You will be presented with an image of a car. Your goal is to guess the exact make and model.
 3. **Make Your Guess**: Input your guess into the provided text input field.
-
 4. **Submit Your Guess**: Click the "Submit" button to submit your guess.
-
-5. **Receive Feedback**: After each guess, you will receive feedback indicating whether your guess was correct or not. If your guess was incorrect, you will receive hints as arrows to help you guess the correct answer.
-
-6. **Keep Guessing**: You have up to five attempts to guess the correct make and model of the car. Use the feedback provided after each guess to refine your next guess.
-
-7. **Change Mode**: You can change the mode of the game by clicking on the mode name. This alters selection of available cars in the car game based on the name.
-
-8. **Win the Game**: If you guess the correct make and model of the car within five attempts, you win the game!
+5. **Receive Feedback**: After each guess, you will receive feedback indicating whether your guess was correct or not. Incorrect guesses will receive directional hints.
+6. **Keep Guessing**: You have up to five attempts to guess correctly. Use the feedback to refine your guesses.
+7. **Change Mode**: Click on the mode name to change game modes, affecting the selection of available cars.
+8. **Win the Game**: If you guess correctly within five attempts, you win!
 
 ## Modes
 
-Choose from a variety of game modes to tailor your gameplay experience:
+Choose from a variety of game modes:
+
 - All Cars
 - German Cars
 - British Cars
 - Cars with 500+ Horsepower
-- Cars with 500- Horsepower
-- Cars for Less than $100,000 USD
-- Cars for More than $100,000 USD
-- Cars that Have 0-62mph in Less than 3 Seconds
-- Cars that Have Engine Size of 5 Litres and More
+- Cars with less than 500 Horsepower
+- Cars costing less than $100,000
+- Cars costing more than $100,000
+- Cars with 0-62mph in less than 3 seconds
+- Cars with engine sizes of 5 liters or more
 
 ## Data Source
 
-The data used in this game consists of 88 sports cars based on the Kaggle dataset by Kiattisak Rattanaporn, available at [Sports Car Prices Dataset](https://www.kaggle.com/datasets/rkiattisak/sports-car-prices-dataset).
+The car data consists of 88 sports cars from the Kaggle dataset by Kiattisak Rattanaporn, available at [Sports Car Prices Dataset](https://www.kaggle.com/kiattisak/sports-car-prices).
 
 ## Photo Credits
 
-The car photos used in this game are sourced from [Wallpaper Cave](https://wallpapercave.com/) and other publicly available sources online.
+Car photos are sourced from Wallpaper Cave and other publicly available sources.
 
 ## Disclaimer
 
-This project has no commercial gain and is purely for learning purposes.
+This project is for learning purposes and has no commercial intent.
 
 ## Ranking and Statistics
 
-- **Top 10 Players**: View the rankings of the top 10 players along with their statistics.
-  - Games Played
-  - Win Ratio Percentage
-  - Favorite Mode
-  - Wins with 1 Guess
-  - Average Guesses per Game
+View the rankings of the top 10 players along with their statistics:
 
-- **Your Statistics**: See how your statistics compare to the top players.
-  - Games Played
-  - Win Ratio Percentage
-  - Favorite Mode
-  - Wins with 1 Guess
-  - Average Guesses per Game
+- **Games Played**
+- **Win Ratio Percentage**
+- **Favorite Mode**
+- **Wins with 1 Guess**
+- **Average Guesses per Game**
+
+Compare your statistics to the top players.
 
 ## Feedback and Support
 
-If you encounter any bugs, have suggestions for improvement, or would like to request new features or modes, please send an email to [sawinskif@gmail.com](mailto:sawinskif@gmail.com).
+If you encounter any bugs, have suggestions, or want to request new features, please email sawinskif@gmail.com.
 
 Thank you for playing! Enjoy guessing the cars!
